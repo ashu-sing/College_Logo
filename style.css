@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:cyan;
+    border-left: 45px solid rgb(0, 21, 255);
+    border-top: 45px solid red;
+    border-right: 45px solid rgb(221, 255, 0);
+    border-bottom:45px solid rgb(255, 0, 128);
+    width: 95.3vw;
+    height: 90.2vh;
+   
+}
+
+/* Parent box having both Right and Left side box */
+
+#parent_div{
+    background-color: rgb(255, 252, 252);
+    border: 2.5px solid black;
+    width: 880px;
+    height: 280px;
+    position:absolute;
+    top: 260px; left: 500px;
+    z-index: 5;
+}
+
+/* Right Side content styling */
+
+.right_side_content{
+    float: right;
+    font-size: 70px;
+    font-family:  Helvetica;
+
+}
+.right_side_childbox{
+    margin-top: 7px;
+}
+.bold_heading {
+    border: 2px solid black;
+    background: #ff7b00;
+    height: fit-content;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
+
+/* Left Side circle Styling */
+
+#outer-circle::before{
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    height: 183px;
+    width: 183px;
+    margin-left: 140px;
+    margin-top: 138px;
+    transform: translate(-50%,-50%);
+    border-left: 40px solid white;
+    border-right: 40px solid white;
+    border-top: 40px solid white;
+    border-bottom: 40px solid white;
+    border-radius: 50%;
+    z-index: 4;
+    
+}
+#outer-circle::after{
+    content: "";
+    border-radius: 50%;
+    height: 182px;
+    width: 182px;
+    background: #fb810f;
+    margin-top: -222px;
+    margin-left: 48px;
+    position: absolute;
+    z-index: 2;
+}
+
+/* black line border of two circles styling */
+
+.cir{
+    position: relative;
+    height: 260px;
+    width: 260px;
+    border: 2px solid black;
+    left: 7px;
+    border-radius: 50%;
+    bottom: -5px;
+    z-index: 6;
+}
+.cir2{
+    position: relative;
+    height: 180px;
+    width: 180px;
+    border: 2px solid black;
+    left: 47px;
+    border-radius: 50%;
+    bottom: 218px;
+    z-index: 5;
+}
+
+/* inner triangles section styling */
+
+.inner_triangles{
+    left: 45px;
+    transform: rotate(6deg);
+    position: relative;
+    bottom: -52px;
+    z-index: 3;     
+}
+.triangle {   
+    position: absolute;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-top: 230px solid rgb(56, 53, 53);
+    transform-origin:bottom; 
+}
+#tri1{
+    transform: rotate(12.6deg);  
+  }
+#tri2{
+    transform: rotate(31deg);
+    border-top: 231px solid rgb(56, 53, 53);    
+}
+#tri3{
+    transform: rotate(50deg);
+}
+#tri4{
+    transform: rotate(68deg);  
+}
+
+/* Left side Rotated letters section styling */
+
+.letter_box {
+    margin: -431px 0px 252px 132px; 
+    transform: rotate3d(20deg ,30deg);
+}
+.char{
+    display: inline-block;
+    position: absolute;
+    z-index: 20;
+    font-weight: 300;
+    font-size: 23px;
+    padding-bottom: 97px;
+    transform-origin: bottom center;
+}
+
+/* LOVELY */
+
+#char1{
+    transform: rotate(-101deg);
+}
+#char2{
+    transform: rotate(-92deg);
+    padding-bottom:98px ;
+}
+#char3{
+    transform: rotate(-84deg);
+}
+#char4{
+    transform: rotate(-75.9deg);
+}
+#char5{
+    transform: rotate(-67deg);
+}
+#char6{
+    transform: rotate(-60.8deg);
+}
+
+/* PROFESSIONAL */
+
+#char7{
+    transform: rotate(-43deg);
+}
+#char8{
+    transform: rotate(-36deg);
+}
+#char9{
+    transform: rotate(-28deg);
+}
+#char10{
+    transform: rotate(-19deg);
+}
+#char11{
+    transform: rotate(-12deg);
+}
+#char12{
+    transform: rotate(-3.8deg);
+}
+#char13{
+    transform: rotate(3.7deg);
+}
+#char14{
+    transform: rotate(11deg);
+    padding-bottom:100px ;
+}
+#char15{
+    transform: rotate(16deg);
+}
+#char16{
+    transform: rotate(25deg);
+}
+#char17{
+    transform: rotate(34deg);
+}
+#char18{
+    transform: rotate(43deg);
+}
+
+/* UNIVERSITY */
+
+#char19{
+    transform: rotate(55deg);
+}
+#char20{
+    transform: rotate(64deg);
+}
+#char21{
+    transform: rotate(68.4deg);
+    padding-bottom: 104px;
+}
+#char22{
+    transform: rotate(77deg);
+}
+#char23{
+    transform: rotate(84deg);
+}
+#char24{
+    transform: rotate(91deg);
+}
+#char25{
+    transform: rotate(98deg);
+}
+#char26{
+    transform: rotate(102deg);
+    padding-bottom: 99px;
+}
+#char27{
+    transform: rotate(109deg);
+}
+#char28{
+    transform: rotate(117deg);
+}
+
+/* .(INDIA)PUNJAB. */
+
+#char29{
+    transform: rotate(123deg);
+    font-size: 43px;
+    padding-bottom: 83px;
+}
+#char30{
+    transform: rotate(138deg);
+    padding-bottom:99.4px ;
+}
+#char31{
+    transform: rotateZ(-28deg);
+    margin-top: 190px;
+    margin-left: 113px;
+
+}
+#char32{
+    transform: rotateZ(-20deg);
+    margin-top: 204px;
+    margin-left: 91px;
+}
+#char33{
+    transform: rotateZ(-12deg);
+    margin-top: 213px;
+    margin-left: 59px;
+}
+#char34{
+    transform: rotate(170deg);
+}
+#char35{
+    transform: rotate(174deg);
+}
+#char36{
+    transform: rotate(178deg);
+    padding-bottom:98px ;
+}
+#char37{
+    transform: rotateZ(11deg);
+    margin-top: 217px;
+    margin-left: -37px;
+}
+#char38{
+    transform: rotateZ(18deg);
+    margin-top: 210px;
+    margin-left: -65px; 
+}
+#char39{
+    transform: rotateZ(19deg);
+    margin-top: 204px;
+    margin-left: -76px;
+}
+#char40{
+    transform: rotateZ(28deg);
+    margin-top: 191px;
+    margin-left: -108px;
+}
+#char41{
+    transform: rotateZ(31deg);
+    margin-top: 178px;
+    margin-left: -128px;
+}
+#char42{
+    transform: rotateZ(32deg);
+    margin-top: 165px;
+    margin-left: -139px;
+}
+#char43{
+    transform: rotate(248deg);
+    font-size: 43px; 
+    padding-bottom: 85px;
+}
+
+/* Temporary box in white color to remove bottom joining of triangles styling */
+
+.temporary{
+    z-index: 5;
+    position: relative;
+    display: inline-block;
+    top: -47px;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    left: 31px;
+}
